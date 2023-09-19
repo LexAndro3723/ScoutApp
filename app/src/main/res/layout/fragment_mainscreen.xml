@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainScreenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/refresh_cw2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/check_square"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/check_square"
+                android:text="@string/check_square"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@id/bell"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bell"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/bell"
+                android:text="@string/bell"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@id/check_square"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/LinearLayout_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/map"
+                android:text="@string/map"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@id/book_open"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/book_open"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/book_open"
+                android:text="@string/book_open"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@id/map"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/LinearLayout_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/file_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/file_text"
+                android:text="@string/file_text"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@id/opensettings"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/opensettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/sliders"
+                android:text="@string/settings2"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@id/file_text"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_content3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@+id/LinearLayout_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/user"
+                android:text="@string/user"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toStartOf="@id/partners"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/partners"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/partners"
+                android:text="@string/partners"
+                android:textColor="@color/color2"
+                android:textSize="10sp"
+                app:backgroundTint="@color/backgroundTint"
+                app:cornerRadius="10dp"
+                app:layout_constraintStart_toEndOf="@id/user"
+                app:strokeColor="@color/strokeColor"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/refresh_cw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh_cw2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/refresh_cw1" />
+
+    <TextView
+        android:id="@+id/refresh_cw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.09.2023 8:17:31"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IV_cake"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/IV_cake"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/refresh_cw"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/refresh_cw1"></com.google.android.material.imageview.ShapeableImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

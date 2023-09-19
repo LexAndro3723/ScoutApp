@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.example.scout.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainscreenFragment"
+            app:destination="@id/mainscreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainscreenFragment"
+        android:name="ru.example.scout.MainScreenFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_mainscreen">
+        <action
+            android:id="@+id/action_mainscreenFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainscreenFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_mainscreenFragment_to_partnersFragment"
+            app:destination="@id/partnersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.example.scout.SettingsFragment"
+        android:label="@string/settings2"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_viewingtemplateFragment"
+            app:destination="@id/viewingtemplateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="ru.example.scout.CalculatorFragment"
+        android:label="@string/calculator"
+        tools:layout="@layout/fragment_calculator"></fragment>
+    <fragment
+        android:id="@+id/partnersFragment"
+        android:name="ru.example.scout.PartnersFragment"
+        android:label="@string/partners"
+        tools:layout="@layout/fragment_partners"></fragment>
+    <fragment
+        android:id="@+id/viewingtemplateFragment"
+        android:name="ru.example.scout.ViewingTemplateFragment"
+        android:label="@string/viewingtemplate"
+        tools:layout="@layout/fragment_viewingtemplate">
+        <argument
+            android:name="item_id"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

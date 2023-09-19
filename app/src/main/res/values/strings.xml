@@ -1,0 +1,32 @@
+<resources>
+	<string name="app_name">Scout</string>
+    <string name="opensettings">Настройки</string>
+    <string name="settings2">Настройки чек-листов</string>
+    <string name="loading">Синхронизация</string>
+    <string name="viewingtemplate">Шаблон чек-листа</string>
+    <string name="calculator1">Калькулятор потребности по препарату и остатку в опрыскивателе</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="file_text">Новый отчет"</string>
+    <string name="book_open">Справочник</string>
+    <string name="map">Открыть карту</string>
+    <string name="bell">Напоминания</string>
+    <string name="check_square">Задания</string>
+    <string name="refresh_cw2">"Последняя синхронизация:"</string>
+    <string name="partners">Клиенты</string>
+    <string name="user">Профиль</string>
+    <string name="volume_tank">Объем бака (л.)</string>
+    <string name="remainder_tank">Остаток в баке (л.)</string>
+    <string name="consumption_rate">Норма расхода (л. на 1 Га.)</string>
+    <string name="needs_processed">Нужно обработать (Га.)</string>
+    <string name="need_refuel">Нужно дозаправить(л.)</string>
+    <string name="refueling">Будет сделано дозаправкой (Га.)</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="email_label">Введите E-mail клиента</string>
+    <string name="save">Сохранить</string>
+    <string name="email_hint">E-mail</string>
+    <string name="invalid_email">Некорректный E-mail</string>
+    <string name="valid_email">E-mail сохранен</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="enter">Войти</string>
+ </resources>
